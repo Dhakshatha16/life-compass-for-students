@@ -1,0 +1,124 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 160px;          /* reduced width */
+  background: #2c3e50;
+  color: #fff;
+  min-height: 100vh;
+  padding: 15px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  font-size: 18px;       /* smaller font so fits nicely */
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 16px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #34495e;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 180px;    /* same as sidebar width */
+  padding: 25px;
+  flex: 1;
+}
+
+header h1 {
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+header p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #2980b9;
+}
+
+/* Details Section */
+.details {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.details h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.details ul li {
+  margin-bottom: 8px;
+}
